@@ -1,113 +1,126 @@
-import Image from 'next/image'
+import resume from "@/resumes/resume.json";
+import { CoolLink, WorkExperience } from "@/components";
+import Link from "next/link";
+
+const work = resume.work;
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main id="content" className="lg:py-24 lg:w-1/2 pt-24">
+      <section
+        id="about"
+        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      >
+        <p className="mb-4">
+          After receiving my B.S. in Computer Science from{" "}
+          <CoolLink
+            href={"https://engineering.vanderbilt.edu/cs/"}
+            text={"Vanderbilt University"}
+          />
+          , I began my career as a Software Engineer at{" "}
+          <CoolLink
+            href={"https://insurancesaleslab.com"}
+            text={"Insurance Sales Lab"}
+          />
+          , where I build some really cool stuff with some really cool people! I
+          was exposed to new and interesting technologies and was forced to
+          learn quickly, adapt, and hit deadlines.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <p className="mb-4">
+          I enjoy solving complex problems using various technologies like
+          React, TypeScript, and AWS. Collaborating with teams who embrace agile
+          processes is important to me, and I thrive in fast-paced environments.
+          I am a high-potential engineer with significant upside and I have
+          demonstrated an ability to overcome a lack of knowledge and experience
+          through dedication, effort, and work ethic.
+        </p>
+        <p>
+          When I’m not working, I enjoy running, lifting, listening to music,
+          and playing backgammon.
+        </p>
+      </section>
+      <section
+        id="experience"
+        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      >
+        {work.map((w, i) => (
+          <WorkExperience
+            key={i}
+            name={w.name}
+            position={w.position}
+            startDate={w.startDate}
+            endDate={w.endDate}
+            highlights={w.highlights}
+            keywords={w.keywords as string[]}
+          />
+        ))}
+
+        <div className="mt-12">
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="inline-flex items-center leading-tight font-semibold text-stone-200 group"
+            aria-label="View Full Résumé"
+            href="https://nicholas-e-wagner.com/Nicholas_Wagner.pdf"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            <span>
+              <span className="border-b border-transparent pb-px transition group-hover:border-amber-300 motion-reduce:transition-none">
+                View Full{" "}
+              </span>
+              <span className="whitespace-nowrap">
+                <span className="border-b border-transparent pb-px transition group-hover:border-amber-300 motion-reduce:transition-none">
+                  Résumé
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </span>
           </a>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section id="projects"></section>
+      <footer>
+        <p className="text-sm text-stone-500">
+          Inspired by the talented{" "}
+          <Link
+            className="text-stone-200 hover:text-amber-300"
+            href={"https://brittanychiang.com"}
+          >
+            Brittany Chiang
+          </Link>
+          . Built with{" "}
+          <Link
+            className="text-stone-200 hover:text-amber-300"
+            href={"https://nextjs.org"}
+          >
+            Next.js
+          </Link>{" "}
+          and{" "}
+          <Link
+            className="text-stone-200 hover:text-amber-300"
+            href={"https://tailwindcss.com"}
+          >
+            Tailwind CSS
+          </Link>
+          , deployed with{" "}
+          <Link
+            className="text-stone-200 hover:text-amber-300"
+            href={"https://vercel.com"}
+          >
+            Vercel
+          </Link>
+          .
+        </p>
+      </footer>
     </main>
-  )
+  );
 }

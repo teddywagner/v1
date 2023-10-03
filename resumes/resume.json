@@ -1,0 +1,221 @@
+{
+  "basics": {
+    "name": "Nicholas Wagner",
+    "label": "Software Engineer",
+    "image": "",
+    "email": "twagner981@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "",
+    "summary": "After receiving my B.S. in Computer Science from Vanderbilt University, I began my career as a Software Engineer at Insurance Sales Lab. I was exposed to new and interesting technologies and was forced to learn quickly, adapt, and hit deadlines. I enjoy solving complex problems using various technologies like React, TypeScript, and AWS. Collaborating with teams who embrace agile processes is important to me, and I thrive in fast-paced environments. I am a high-potential candidate with significant upside and I have demonstrated an ability to overcome a lack of knowledge and experience through dedication and effort. I oppose the 9-5 and want to work somewhere that motivates me to come earlier and stay later in order to achieve the company's goals, make deadlines, and maximize my own professional development.",
+    "location": {
+      "address": "226 E 10th St",
+      "postalCode": "NY 10003",
+      "city": "New York",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "teddywagner",
+        "url": "https://github.com/teddywagner"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Nicholas Wagner",
+        "url": "https://linkedin.com/in/nicholas-e-wagner"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Freelance",
+      "location": "Remote",
+      "description": "Designing and building web applications for small business",
+      "position": "Web Developer",
+      "url": "",
+      "startDate": "2023-05-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Led the redesign of a yacht chartering service’s website, utilizing Next.js 13 framework and modern web technologies to transform Figma designs into a powerful web application",
+        "Implemented Google Cloud Sheets API to quickly develop a Contact form, utilizing service accounts and secure credential management",
+        "Leveraged Google Cloud CDN to efficiently serve large volumes of images and videos on the /gallery pages, enhancing user experience and performance"
+      ],
+      "keywords": [
+        "Next.js",
+        "Tailwind",
+        "React",
+        "Supabase",
+        "Vercel",
+        "GCP"
+      ]
+    },
+    {
+      "name": "Insurance Sales Lab",
+      "location": "Irving, TX",
+      "description": "",
+      "position": "Software Engineer",
+      "url": "https://app.insurancesaleslab.com",
+      "startDate": "2022-10-17",
+      "endDate": "2023-04-27",
+      "summary": "",
+      "highlights": [
+        "Utilized Agile software development daily with employees from multiple sectors, working together to develop the best product and meet deadlines in a fast-paced startup environment",
+        "Built data models, front-end dashboard, and access guards to remodel the customer subscriptions platform from end-to-end, enabling a month-to-month subscription option that increased enterprise engagement by 10%",
+        "Designed and engineered a server-side object cache leveraging TypeScript object types, GraphQL APIs, and Postgres PubSub listeners decreasing Prisma database reads by 40% when rendering a user’s landing page",
+        "Implemented JSON Schema into our codebase and converted the schema into TypeScript types, resulting in a 50% reduction in data processing errors and a strongly typed and validated data model",
+        "Automated SSL certificate management to customers by integrating Google Cloud’s Certificate Manager API framework into the codebase, decreasing each client onboarding meeting by one hour"
+      ],
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "GraphQL",
+        "Apollo GraphQL",
+        "React",
+        "Postgresql",
+        "Prisma",
+        "GCP"
+      ]
+    },
+    {
+      "name": "American Airlines Open Source",
+      "location": "Remote",
+      "description": "",
+      "position": "Full Stack Engineering Mentee",
+      "url": "https://github.com/american-airlines",
+      "startDate": "2021-06-01",
+      "endDate": "2021-08-01",
+      "summary": "",
+      "highlights": [
+        "Developed an API using TypeScript and the Express framework to generate random flight information based on a given airport code by forking the American Airlines flight-engine repository and addressing an open issue",
+        "Implemented Jest unit testing to thoroughly validate API functionality resulting in a 95% code coverage and a 30% increase in overall test coverage"
+      ],
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "Jest",
+        "RESTful APIs"
+      ]
+    },
+    {
+      "name": "Unwind",
+      "location": "Austin, TX",
+      "description": "",
+      "position": "Software Developer",
+      "url": "",
+      "startDate": "2020-06-01",
+      "endDate": "2020-08-01",
+      "summary": "",
+      "highlights": [
+        "Implemented dynamic styling and animations for the application login UI, utilizing Swift to create a seamless user experience that matched the company's design vision",
+        "Developed and implemented a delete functionality for user posts in the app, collaborating with the design team to transform Figma designs into a responsive and intuitive UI, consistent with company branding and standards"
+      ],
+        "keywords": [
+            "Swift",
+            "iOS",
+            "Xcode",
+            "Figma"
+        ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Vanderbilt Student Volunteers for Science",
+      "position": "Team leader",
+      "url": "",
+      "startDate": "2019-02-01",
+      "endDate": "2021-05-01",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Vanderbilt University",
+      "url": "https://www.vanderbilt.edu/",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2018-08-22",
+      "endDate": "2022-05-13",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front End Development",
+      "keywords": [
+        "TypeScript",
+        "HTML",
+        "JavaScript",
+        "Tailwind",
+        "React.js",
+        "NextJS 13",
+        "Node.js",
+        "Apollo Client (GraphQL)"
+      ]
+    },
+    {
+      "name": "Back End Development",
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "GraphQL",
+        "Prisma",
+        "RESTful APIs",
+        "GraphQL",
+        "SQL",
+        "Python",
+        "Django REST Framework",
+        "Postgresql",
+        "Supabase"
+      ]
+    },
+    {
+      "name": "Libraries & Frameworks",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Resy bots"
+    },
+    {
+      "name": "Dallas Stars"
+    },
+    {
+      "name": "Phoenix Suns"
+    },
+    {
+      "name": "backgammon"
+    }
+  ],
+  "projects": [
+    {
+      "name": "API Security Enhancement Project",
+      "description": "A TypeScript script that leverages Resy.com's API network to automate restaurant bookings to explore API security",
+      "highlights": [
+        "Conducted an in-depth analysis of the security posture of a prominent restaurant reservation booking website's APIs, identifying potential vulnerabilities and weaknesses",
+        "Employed reverse-engineering methodologies to deconstruct and comprehend the inner workings of the APIs, uncovering critical security gaps",
+        "Developed a custom cybersecurity toolset leveraging Node.js and Postman to perform rigorous testing and validation of API endpoints, meticulously scrutinizing headers, and assessing authentication mechanisms"
+      ],
+      "keywords": [
+        "Postman",
+        "TypeScript",
+        "Node.js",
+        "RESTful API",
+        "API Security"
+      ],
+      "startDate": "2023-02-01",
+      "endDate": "2023-04-01",
+      "url": "https://github.com/teddywagner/double-resy-please"
+    }
+  ]
+}
