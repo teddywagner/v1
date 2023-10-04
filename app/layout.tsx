@@ -80,7 +80,7 @@ export default function RootLayout({
                     href="https://github.com/teddywagner"
                     target="_blank"
                     rel="noreferrer"
-                    className="block hover:text-stone-200"
+                    className="block hover:text-amber-200"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ export default function RootLayout({
                     href="https://instagram.com/teddywagner"
                     target="_blank"
                     rel="noreferrer"
-                    className="block hover:text-stone-200"
+                    className="block hover:text-amber-200"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function RootLayout({
                     href="https://x.com/teddywagner14"
                     target="_blank"
                     rel="noreferrer"
-                    className="block hover:text-stone-200"
+                    className="block hover:text-amber-200"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ export default function RootLayout({
                     href="https://linkedin.com/in/nicholas-e-wagner"
                     target="_blank"
                     rel="noreferrer"
-                    className="block hover:text-stone-200"
+                    className="block hover:text-amber-200"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

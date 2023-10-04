@@ -3,6 +3,7 @@ import { CoolLink, WorkExperience } from "@/components";
 import Link from "next/link";
 
 const work = resume.work;
+const project = resume.projects[0];
 
 export default function Home() {
   return (
@@ -44,15 +45,7 @@ export default function Home() {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       >
         {work.map((w, i) => (
-          <WorkExperience
-            key={i}
-            name={w.name}
-            position={w.position}
-            startDate={w.startDate}
-            endDate={w.endDate}
-            highlights={w.highlights}
-            keywords={w.keywords as string[]}
-          />
+          <WorkExperience work={w} key={i} />
         ))}
 
         <div className="mt-12">
@@ -77,9 +70,9 @@ export default function Home() {
                   aria-hidden="true"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
               </span>
@@ -87,7 +80,52 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section id="projects"></section>
+      <section
+        id="projects"
+        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      >
+        <WorkExperience
+          work={{
+            name: project.name,
+            position: "",
+            startDate: project.startDate,
+            endDate: project.endDate,
+            highlights: project.highlights,
+            keywords: project.keywords,
+          }}
+        />
+        <div className="mt-12">
+          <a
+            className="inline-flex items-center leading-tight font-semibold text-stone-200 group"
+            aria-label="View Full Github"
+            href="https://github.com/teddywagner"
+          >
+            <span>
+              <span className="border-b border-transparent pb-px transition group-hover:border-amber-300 motion-reduce:transition-none">
+                View Full{" "}
+              </span>
+              <span className="whitespace-nowrap">
+                <span className="border-b border-transparent pb-px transition group-hover:border-amber-300 motion-reduce:transition-none">
+                  Github
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+      </section>
       <footer>
         <p className="text-sm text-stone-500">
           Inspired by the talented{" "}

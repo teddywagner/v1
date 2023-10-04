@@ -2,21 +2,18 @@ import { FunctionComponent } from "react";
 import { KeywordPill } from "@/components/index";
 
 type WorkExperienceProps = {
-  name: string;
-  position: string;
-  startDate: string;
-  endDate: string;
-  highlights: string[];
-  keywords: string[];
+  work: {
+    name: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+    highlights: string[];
+    keywords: string[];
+  };
 };
 
 const WorkExperience: FunctionComponent<WorkExperienceProps> = ({
-  name,
-  position,
-  startDate,
-  endDate,
-  highlights,
-  keywords,
+  work: { name, position, startDate, endDate, highlights, keywords },
 }) => {
   const parseWorkDates = (startDate: string, endDate: string) => {
     const start = new Date(startDate);
@@ -39,7 +36,7 @@ const WorkExperience: FunctionComponent<WorkExperienceProps> = ({
       <div className="w-24 text-sm">{parseWorkDates(startDate, endDate)}</div>
       <div className="flex flex-col flex-1">
         <h1 className="text-white text-xl font-medium">
-          {position} | {name}
+          {position.length ? `${position} |` : ""} {name}
         </h1>
         <p className="mt-2 text-sm">{highlights.join(". ")}</p>
         <div className="flex flex-wrap mt-2 gap-3">

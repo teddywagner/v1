@@ -200,7 +200,7 @@
   "projects": [
     {
       "name": "API Security Enhancement Project",
-      "description": "A TypeScript script that leverages Resy.com's API network to automate restaurant bookings to explore API security",
+      "description": "A TypeScript script that leverages Resy.com’s API network to automate restaurant bookings to explore API security",
       "highlights": [
         "Conducted an in-depth analysis of the security posture of a prominent restaurant reservation booking website's APIs, identifying potential vulnerabilities and weaknesses",
         "Employed reverse-engineering methodologies to deconstruct and comprehend the inner workings of the APIs, uncovering critical security gaps",
