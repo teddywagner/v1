@@ -52,7 +52,8 @@ export default function Home() {
           <a
             className="inline-flex items-center leading-tight font-semibold text-stone-200 group"
             aria-label="View Full Résumé"
-            href="https://nicholas-e-wagner.com/Nicholas_Wagner.pdf"
+            href="https://storage.googleapis.com/wagner-resumes/Nicholas_Wagner.pdf"
+            target="_blank"
           >
             <span>
               <span className="border-b border-transparent pb-px transition group-hover:border-amber-300 motion-reduce:transition-none">
